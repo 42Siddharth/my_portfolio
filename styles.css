@@ -50,8 +50,11 @@ button { font: inherit; }
 .button-primary:hover { background: #84f3e5; }
 .button-secondary { color: var(--text); background: transparent; }
 .button-secondary:hover { border-color: var(--muted); }
+.resume-button { color: #eafcfa; background: #153b4b; border-color: #2c7180; box-shadow: 0 10px 28px rgba(4,35,48,.35); }
+.resume-button:hover { color: white; background: #1b4b5e; border-color: var(--cyan); box-shadow: 0 13px 34px rgba(22,89,100,.3); }
 .hero-links { display: flex; gap: 24px; margin-top: 28px; color: var(--muted); font-family: "DM Mono", monospace; font-size: .7rem; }
-.hero-links a:hover { color: var(--cyan); }
+.hero-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 39px; padding: 0 15px; border: 1px solid rgba(155,176,195,.3); border-radius: 4px; transition: color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease; }
+.hero-links a:hover { color: var(--cyan); background: rgba(84,230,212,.06); border-color: rgba(84,230,212,.55); transform: translateY(-2px); }
 
 .hero-visual { position: relative; min-height: 530px; display: grid; place-items: center; }
 .hero-visual::before { content: ""; position: absolute; width: 390px; height: 390px; border: 1px solid rgba(84,230,212,.25); border-radius: 50%; }
@@ -193,6 +196,36 @@ button { font: inherit; }
 .contact-footer a:hover { color: var(--cyan); }
 .footer { min-height: 75px; display: flex; justify-content: space-between; align-items: center; padding: 0 max(24px, calc((100vw - var(--max)) / 2)); color: #607385; background: #030a12; border-top: 1px solid rgba(155,176,195,.1); font-family: "DM Mono", monospace; font-size: .6rem; }
 .footer a:hover { color: var(--text); }
+
+/* Readability pass for supporting labels and compact UI text */
+.site-nav { font-size: .88rem; }
+.eyebrow, .section-index { font-size: .8rem; }
+.button { font-size: .86rem; }
+.hero-links { font-size: .78rem; }
+.portrait-status { font-size: .68rem; }
+.data-label { font-size: .64rem; }
+.data-card small { font-size: .68rem; }
+.metric-strip span { font-size: .77rem; }
+.capability-list span { font-size: .75rem; }
+.timeline-meta { font-size: .74rem; }
+.role-company { font-size: .78rem; }
+.tag-row span, .case-foot span { font-size: .7rem; }
+.case-top { font-size: .7rem; }
+.case-result span, .dual-result span { font-size: .75rem; }
+.tool-number { font-size: .74rem; }
+.tool-group p { font-size: .9rem; }
+.signal-list span { font-size: .88rem; }
+.chart-title p { font-size: .72rem; }
+.chart-code { font-size: .66rem; }
+.donut-unit { font-size: 10.5px; }
+.chart-legend li { font-size: .76rem; }
+.skill-meta strong { font-size: .9rem; }
+.skill-meta span { font-size: .72rem; }
+.chart-tooltip { font-size: .72rem; }
+.chart-note { font-size: .74rem; line-height: 1.5; }
+.education-card > div span { font-size: .78rem; }
+.contact-footer { font-size: .76rem; }
+.footer { font-size: .7rem; }
 
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
